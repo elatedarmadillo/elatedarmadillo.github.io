@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surprise for My Love</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #loveMessage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+
+      #lopyu {
+        font-size: 20px;
+        color: whitesmoke; /* Warna teks yang romantis */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Bayangan teks yang lembut */
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .love-image {
+        width: 300px; /* Menyesuaikan lebar gambar cinta */
+        margin-bottom: 10px; /* Jarak antara gambar dan teks */
+        border-radius: 10%; /* Membuat border melengkung */
+      }
+
+      img#heart {
+        width: 200px;
+        margin-bottom: 20px;
+        filter: hue-rotate(0deg) brightness(1); /* Menyesuaikan warna hati menjadi lebih merah */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>For My Love</h1>
+        <img src="heart.png" alt="Heart" id="heart" />
+        <div id="counter" class="counter">0</div>
+        <!-- Tambahkan elemen counter -->
+      </header>
+      <main>
+        <p>My dearest,</p>
+        <p>30 Maret 2024, hari ini usia kamu udah 27 tahun.</p>
+        <p>
+          Semoga hal hal baik datang kepadamu di usia mu yg ke 27 tahun ini
+          sayang. Semoga apa yg kita inginkan segera terwujud, Aamiin.
+        </p>
+        <p>Terima kasih sudah menjadi wanita kuat dan hebat.</p>
+        <p>Happy Birthday Ayang!</p>
+        <p>With all my love,</p>
+        <p id="sender">Ayang</p>
+
+        <div id="loveMessage" class="hidden">
+          <img src="akudannisa.png" alt="Love" class="love-image" />
+          <!-- Tambahkan gambar love -->
+          <p id="lopyu">Love You Ayang!</p>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
