@@ -22,7 +22,7 @@ function animateHeart() {
     counter.classList.remove("shake");
   }, 500);
 
-  if (clickCount >= 5) {
+  if (clickCount >= 27) {
     const heart = document.getElementById("heart");
     heart.style.transform = "scale(30)";
     counter.style.transform = "scale(0)";
